@@ -1,0 +1,8 @@
+python
+sql
+git
+rest api
+data structures
+oop
+linux
+communication
