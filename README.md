@@ -1,58 +1,58 @@
-#  Cyber Threat & Vulnerability Analysis in Healthcare Using ML
-
-A machine learning-based project that uses Logistic Regression to assess cyber threats and vulnerabilities within the healthcare ecosystem.
+# Smart-Resume-Analyzer-with-Action-Based-Feedback 
+##  Table of Contents
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [How to Run](#how-to-run)
+- [Example Output](#example-output)
+- [Tech Stack](#tech-stack)
+- [Author](#author)
 ##  Features
-- Logistic Regression ML model for threat prediction
-- Supports CSV data input (mock/sample data)
-- Accuracy, Confusion Matrix, and Classification Report output
-- Clean terminal output
-##  How It Works
-- Reads cyber threat data from a CSV file
-- Splits into training and test sets
-- Trains a Logistic Regression model
-- Evaluates performance using sklearn metrics
-##  How to Run
+-  Reads resumes in `.txt`, `.pdf`, and `.docx`
+-  Matches against a keyword list
+-  Calculates resume match score (0–100%)
+-  Generates feedback report
+-  GitHub Actions automation
+## How It Works
+- Reads resume content using Python file handlers and libraries (`PyPDF2`, `python-docx`)
+- Loads a keyword list from `keywords.txt`
+- Compares the resume content against each keyword
+- Scores based on matches
+- Outputs the result and generates a report (`resume_feedback.txt`)
+## ▶ How to Run Locally
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/iamshankar23/cyber-threat-ml-healthcare.git
+# Clone the repo
+git clone https://github.com/yourname/smart-resume-analyzer.git
 
-# 2. Go into the project directory
-cd cyber-threat-ml-healthcare
+# Navigate to the project folder
+cd smart-resume-analyzer
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the Python model
-python logistic_model.py
+# Run the analyzer
+python resume_checker.py sample_resume.txt
+##  How to Run Locally
 
 ---
 
-###  5. **Example Output**
+###  6. **Example Output**
+
 ```markdown
-##  Sample Output
+##  Example Output
 
- Accuracy: 1.0  
- Confusion Matrix:  
-[[1 0]  
- [0 1]]  
-
- Classification Report:
-
-          precision    recall  f1-score   support
-
-       0       1.00      1.00      1.00         1
-       1       1.00      1.00      1.00         1
-
-accuracy                           1.00         2
+ Resume Score: 100.00%  
+ Keywords Present: ['python', 'sql', 'git', 'oop']  
+ Missing Keywords: []
 ##  Tech Stack
-- Python 3.x
-- scikit-learn
-- pandas
+- Python 3.10+
+- PyPDF2
+- python-docx
+- GitHub Actions
+- GitHub Codespaces (optional)
 ##  Author
 
 **Guru Shankar R**  
-BCA Graduate | Aspiring Software Developer  
+Aspiring Software Developer  
 [GitHub](https://github.com/iamshankar23) • [LinkedIn](https://linkedin.com/in/guru-shankar-840936243)
-
 
